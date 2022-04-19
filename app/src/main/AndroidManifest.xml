@@ -10,6 +10,9 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.PlantIn">
         <activity
+            android:name=".MenuPrincipal"
+            android:exported="false" />
+        <activity
             android:name=".Login"
             android:exported="false" />
         <activity

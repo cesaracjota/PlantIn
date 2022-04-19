@@ -12,11 +12,11 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         app:cardCornerRadius="30dp"
+        android:layout_marginTop="-30dp"
         android:backgroundTint="#D5F5E3">
         <ImageView
             android:layout_width="wrap_content"
-            android:layout_marginTop="10dp"
-            android:layout_height="450sp"
+            android:layout_height="480sp"
             android:src="@drawable/img"/>
     </androidx.cardview.widget.CardView>
 
@@ -50,6 +50,7 @@
         android:textAlignment="center"
         android:gravity="center"
         android:textSize="20dp"
+        android:layout_marginBottom="40dp"
         android:textColor="@color/white"
         android:background="@drawable/button_round"
         />
