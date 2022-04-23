@@ -1,10 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout
-    xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
+    android:layout_height="wrap_content"
     android:layout_marginHorizontal="30dp"
     android:layout_marginTop="30dp"
     android:orientation="vertical"
@@ -16,18 +15,18 @@
         android:orientation="horizontal">
 
         <TextView
-            android:layout_width="270dp"
+            android:layout_width="217dp"
             android:layout_height="wrap_content"
             android:text="PlantIn"
-            android:textStyle="bold"
             android:textSize="30dp"
-            />
+            android:textStyle="bold" />
 
         <ImageView
             android:layout_width="35dp"
             android:layout_height="35dp"
             android:layout_marginRight="10dp"
             android:src="?android:attr/actionModeWebSearchDrawable" />
+
         <ImageView
             android:layout_width="35dp"
             android:layout_height="35dp"
@@ -38,51 +37,57 @@
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Empieza a administrar tus plantas"
         android:layout_marginTop="10dp"
-        />
+        android:text="Empieza a administrar tus plantas" />
+
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="65dp"
-        android:background="@drawable/scan_plant"
         android:layout_marginTop="10dp"
-        android:orientation="horizontal"
+        android:background="@drawable/scan_plant"
         android:gravity="center"
-        >
+        android:orientation="horizontal">
 
         <ImageView
             android:layout_width="30dp"
             android:layout_height="30dp"
-            android:src="@android:drawable/gallery_thumb"
-            />
+            android:src="@android:drawable/gallery_thumb" />
+
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginLeft="10dp"
             android:text="Scanear Planta"
+            android:textColor="#148F77"
             android:textSize="18dp"
-            android:textStyle="bold"
-            android:textColor="#148F77"/>
+            android:textStyle="bold" />
 
     </LinearLayout>
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:orientation="horizontal"
-        android:layout_marginTop="20dp">
+        android:layout_marginTop="20dp"
+        android:orientation="horizontal">
+
         <TextView
-            android:layout_width="290dp"
+            android:layout_width="249dp"
             android:layout_height="wrap_content"
             android:text="Plantas Populares"
-            android:textStyle="bold"/>
+            android:textStyle="bold" />
+
         <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Ver todo"/>
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:clickable="true"
+            android:text="Ver todo" />
+
+
     </LinearLayout>
 
     <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/my_recycler"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="horizontal">
